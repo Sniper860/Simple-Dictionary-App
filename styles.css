@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Button hover animation */
+button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+input, button, select {
+    width: calc(100% - 22px); /* Adjusted width to be consistent */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+button {
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: none;
+}
+button:hover {
+    background: #0056b3;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Theme Modes */
+.light {
+    background: #ffffff;
+    color: #000;
+}
+.dark {
+    background: #2b2b2b;
+    color: #fff;
+}
+.sepia {
+    background: #f5deb3;
+    color: #5b4636;
+}
+.blue-light {
+    background: #d0e8ff;
+    color: #003366;
+}
+.high-contrast {
+    background: #000;
+    color: #ff0;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button hover animation */
+button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Input & Select with focus animation */
+input:focus, select:focus {
+    border-color: #666;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
